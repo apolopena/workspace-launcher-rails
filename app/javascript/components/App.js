@@ -4,7 +4,11 @@ class App extends React.Component {
   render () {
     return (
       <React.Fragment>
-       React App says: {this.props.greeting}
+        <div class="flex items-center justify-center h-screen">
+          <div class="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
+            React App says: {this.props.greeting}
+          </div>
+        </div>
       </React.Fragment>
     );
   }

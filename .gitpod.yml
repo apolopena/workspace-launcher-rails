@@ -13,7 +13,8 @@ ports:
 tasks:
   - init: >
       bundle install &&
-      rake db:create
+      rake db:create &&
+      yarn install
     command: >
       rails server
 

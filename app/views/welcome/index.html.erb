@@ -1,2 +1,19 @@
-<%= javascript_pack_tag 'application' %>
-<%= react_component("App", { greeting: "Hello from react-rails." }) %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workspace Launcher - Apolo Pena</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= react_component("App", { greeting: "Hello from react-rails." }) %>
+  </body>
+</html>
+
